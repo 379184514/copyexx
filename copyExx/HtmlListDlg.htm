@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<STYLE>
+body {   font: 10pt Arial }
+table {  font: 10pt Arial }
+.btn { background-color:#0099cc;text-align:middle;border:1px solid #B1D632;cursor:pointer;}
+</STYLE>
+</HEAD>
+<BODY bgColor=THREEDFACE>
+<TABLE width=100% rows=1 cols=2>
+<TR>
+<TD>当前样式: <SPAN class=hotElement 
+id=currStyle>default.htm</SPAN></TD><TD align=right><BUTTON class=hotElement 
+id=browse accesskey="B">载入样式</BUTTON></TD>
+</TR>
+</TABLE>
+<HR>
+<DIV id=sortstyle>
+<span id=SortUp class=btn title=升序>△</span>
+<span id=SortDown class=btn title=降序>▽</span>
+<span id=SortUpCur class=btn title=当前升序>▲</span>
+<span id=SortDownCur class=btn title=当前降序>▼</span>
+</DIV>
+<DIV id=fileList>
+<TABLE border=1 width=100%>
+<THEAD>
+<TR>
+	<TD id=listIndex class=listh >序号</TD>
+	<TD id=listTimeS class=listh >开始时间<span id=listsort>△</span></TD>
+	<TD id=listGroup class=listh ><span id=unfold class=btn title=全部展开>[+]</span><span id=fold  class=btn title=全部折叠>[ - ]</span>类别[▼▲]</TD>
+	<TD id=listAction class=listh >操作类型[△▽]</TD>
+	<TD id=listSrcDir class=listh >源路径[△▽]</TD>
+	<TD id=listSrcName class=listh >源文件名[△▽]</TD>
+	<TD id=listDstDir class=listh >目标路径[△▽]</TD>
+	<TD id=listDstName class=listh >目标文件名[△▽]</TD>
+	<TD id=listRateBar class=listh >进度条<span id=listRateValue>50%</span>[△▽]</TD>
+	<TD id=listSize class=listh >剩余字节数/总字节数</TD>
+	<TD id=listResult class=listh >结果[△▽]</TD>
+	<TD id=listTimeE class=listh >完成时间</TD>
+	<TD id=listDuration class=listh >历时</TD>
+	<TD id=listCtrl  class=listh title=开始、暂停、取消>控制[△▽]</TD>
+</TR>
+</THEAD>
+
+
+
+<TR>
+<TD width=20>1</TD>
+<TD>文件夹、文件</TD>
+<TD>复制、剪切、删除</TD>
+<TD>D:\新建文件夹\删</TD>
+<TD>abc.txt</TD>
+<TD>F:\文本\</TD>
+<TD>abc（2）.txt</TD>
+<TD width=20% style="text-align:left;border:1px solid #B1D632; padding: 1px;">
+
+<div style="align:left;position:absolute;background-color:#0099cc;border:1px solid #cccccc;width:10%;z-index:-10;">
+</div>
+70%
+</TD>
+
+<TD>成功、失败、取消、等待、暂停、40%</TD>
+<TD>【开始、暂停】、【取消、恢复】、【撤销、重做】</TD>
+</TR>
+
+</TABLE>
+
+
+
+</DIV>
+</BODY>
+</HTML>

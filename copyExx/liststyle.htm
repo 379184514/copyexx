@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<STYLE>
+body {   font: 10pt Arial;}
+table {  font: 10pt Arial;border-collapse: collapse;border: 1px solid #888;}
+.btn { background-color:#0099cc;text-align:middle;border:1px solid #B1D632;cursor:pointer;}
+thead {background-color:#bbbbbb;}
+td {border:1px solid #888;}
+</STYLE>
+</HEAD>
+<BODY bgColor=THREEDFACE>
+<TABLE width=100% rows=1 cols=2>
+<TR>
+<TD>当前样式: <SPAN class=hotElement 
+id=currStyle>default.htm</SPAN></TD><TD align=right><BUTTON class=hotElement 
+id=browsestyle accesskey="B">载入样式</BUTTON></TD>
+</TR>
+</TABLE>
+<HR>
+<DIV id=sortstyle style="display:none">
+<span id=SortUp class=btn title=升序>△mm</span>
+<span id=SortDown class=btn title=降序>▽</span>
+<span id=SortUpCur class=btn title=当前升序>▲</span>
+<span id=SortDownCur class=btn title=当前降序>▼</span>
+<span id=unfold class=btn title=展开>[+]</span>
+<span id=fold  class=btn title=折叠>[ - ]</span>
+<DIV id=Ratebar width=100% style="text-align:left;border:1px solid #B1D632; padding: 0px;">
+<div style="align:left;position:absolute;background-color:#0099cc;width:10%;z-index:-10;">
+</div>
+<div width=100% style="text-align:center;">10%</div>
+</DIV>
+<br>
+<span id=tabhead><TR>
+	<TD id=listIndex class=listh >序号</TD>
+	<TD id=listTimeS class=listh >开始时间<span id=ListSort>△</span>[<span id=SortUp class=btn title=升序>△</span>
+<span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listGroup class=listh ><span id=unfold class=btn title=全部展开>[+]</span>类别[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listAction class=listh >操作类型[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listSrcDir class=listh >源路径[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listSrcName class=listh >源文件名[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listDstDir class=listh >目标路径[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listDstName class=listh >目标文件名[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listRateBar class=listh >进度条<span id=listRateValue>50%</span>[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listSize class=listh >剩余字节数/总字节数[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listResult class=listh >结果[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listTimeE class=listh >完成时间[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listDuration class=listh >历时[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+	<TD id=listCtrl  class=listh title=开始、暂停、取消>控制[<span id=SortUp class=btn title=升序>△</span><span id=SortDown class=btn title=降序>▽</span>]</TD>
+</TR>
+</span>
+</DIV>
+<DIV id=fileList>
+<TABLE id=filelisttab border=1px width=100%>
+<THEAD><SPAN id=tabhead>
+<TR>
+<TD id=listIndex class=listh>序号</TD> 
+<TD id=listTimeS class=listh>开始时间<SPAN id=ListSort>△</SPAN>[<SPAN id=SortUp class=btn title=升序>△</SPAN> <SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listGroup class=listh><SPAN id=unfold class=btn title=全部展开>[+]</SPAN>类别[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listAction class=listh>操作类型[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listSrcDir class=listh>源路径[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listSrcName class=listh>源文件名[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listDstDir class=listh>目标路径[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listDstName class=listh>目标文件名[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listRateBar class=listh>进度条<SPAN id=listRateValue>50%</SPAN>[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listSize class=listh>剩余字节数/总字节数[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listResult class=listh>结果[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listTimeE class=listh>完成时间[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listDuration class=listh>历时[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> <TD id=listCtrl class=listh title=开始、暂停、取消>控制[<SPAN id=SortUp class=btn title=升序>△</SPAN><SPAN id=SortDown class=btn title=降序>▽</SPAN>]</TD> </TR></SPAN></THEAD>
+
+<TR id=0><TD width=20>0</TD><TD>2013-09-09 00:12:02</TD><TD><span id=unfold class=btn title=展开>[+]</span>文件夹</TD><TD>复制</TD><TD>C:\</TD><TD>我的漫画</TD><TD>C:\</TD><TD>我的漫画</TD><TD><DIV id=Ratebar width=100% style="text-align:left;border:1px solid #B1D632; padding: 0px;"><div style="align:left;position:absolute;background-color:#0099cc;width:45%;z-index:-10;"></div><div width=100% style="text-align:center;">45%</div></DIV></TD><TD>1851505 / 1851505</TD><TD>成功</TD><TD>2013-09-09 00:12:02</TD><TD>0</TD><TD>【暂停】</TD></TR>
+  <tr>
+    <td colspan="50">January</td>
+  </tr>
+</TABLE>
+
+</DIV>
+<DIV id=fileListsmall  style="display:none">
+</DIV>
+<DIV id=fileListnormal  style="display:none">
+</DIV>
+
+<DIV id=fileListlarge  style="display:none">
+</div>
+</BODY>
+</HTML>

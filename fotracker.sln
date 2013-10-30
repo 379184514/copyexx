@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fotracker", "fotracker\fotracker.vcproj", "{7683A7E9-013D-4E4A-B12D-62FEC1334711}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exe", "exe\exe.vcproj", "{1EA715F1-7372-4DBA-BC52-7F2AE606B829}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "copyExx", "copyExx\copyExx.vcproj", "{3E0D105E-08B5-444C-B47E-F6A5351389E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Debug|Win32.Build.0 = Debug|Win32
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Debug|x64.ActiveCfg = Debug|x64
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Debug|x64.Build.0 = Debug|x64
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Release|Win32.ActiveCfg = Release|Win32
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Release|Win32.Build.0 = Release|Win32
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Release|x64.ActiveCfg = Release|x64
+		{7683A7E9-013D-4E4A-B12D-62FEC1334711}.Release|x64.Build.0 = Release|x64
+		{1EA715F1-7372-4DBA-BC52-7F2AE606B829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1EA715F1-7372-4DBA-BC52-7F2AE606B829}.Debug|x64.ActiveCfg = Debug|x64
+		{1EA715F1-7372-4DBA-BC52-7F2AE606B829}.Release|Win32.ActiveCfg = Release|Win32
+		{1EA715F1-7372-4DBA-BC52-7F2AE606B829}.Release|x64.ActiveCfg = Release|x64
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Debug|Win32.Build.0 = Debug|Win32
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Debug|x64.ActiveCfg = Debug|x64
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Debug|x64.Build.0 = Debug|x64
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Release|Win32.ActiveCfg = Release|Win32
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Release|Win32.Build.0 = Release|Win32
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Release|x64.ActiveCfg = Release|x64
+		{3E0D105E-08B5-444C-B47E-F6A5351389E9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
